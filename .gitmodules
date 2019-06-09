@@ -1,3 +1,6 @@
 [submodule "dino-library"]
 	path = dino-library
 	url = https://github.com/sjjeong/dino-library.git
+[submodule "dino-naver-data"]
+	path = dino-naver-data
+	url = https://github.com/sjjeong/dino-naver-data.git
