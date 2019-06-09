@@ -8,8 +8,9 @@ buildscript {
         
     }
     dependencies {
-        classpath deps.gradle
-        classpath deps.kotlin.plugin
+        classpath deps.classpath.gradle
+        classpath deps.classpath.kotlin
+        classpath deps.classpath.navigation_safe_args
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
