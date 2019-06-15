@@ -6,6 +6,7 @@ import com.dino.library.ext.setupKoin
 import com.googry.naver.domain.di.dinoNaverDomainModule
 import com.googry.naver.remote.di.dinoNaverRemoteModule
 import com.googry.naver.repository.di.dinoNaverRepositoryModule
+import com.googry.naveropenapisample.di.appViewModelModule
 
 class MainApplication : Application() {
 
@@ -16,7 +17,8 @@ class MainApplication : Application() {
             getDinoNetworkModule("https://openapi.naver.com/"),
             dinoNaverDomainModule,
             dinoNaverRepositoryModule,
-            dinoNaverRemoteModule
+            dinoNaverRemoteModule,
+            appViewModelModule
         )
     }
 

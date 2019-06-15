@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion versions.compile_sdk_version
     defaultConfig {
@@ -13,6 +15,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "NAVER_CLIENT_ID", "\"y5_NNkPCE9ItVzDN4SYN\""
+        buildConfigField "String", "NAVER_CLIENT_SECRET", "\"dVE5yklLXs\""
     }
     buildTypes {
         release {
@@ -24,6 +29,10 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
     }
 }
 
