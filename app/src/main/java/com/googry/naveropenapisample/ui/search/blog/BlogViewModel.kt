@@ -1,4 +1,4 @@
-package com.googry.naveropenapisample.ui.blog
+package com.googry.naveropenapisample.ui.search.blog
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

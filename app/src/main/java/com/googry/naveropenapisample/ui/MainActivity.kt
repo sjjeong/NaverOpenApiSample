@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.dino.library.ext.replaceFragmentInActivity
 import com.googry.naveropenapisample.R
-import com.googry.naveropenapisample.ui.blog.BlogFragment
+import com.googry.naveropenapisample.ui.search.blog.BlogFragment
 
 class MainActivity : AppCompatActivity() {
 

@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.googry.naveropenapisample.ui.blog.BlogViewModel" />
+            type="com.googry.naveropenapisample.ui.search.blog.BlogViewModel" />
 
     </data>
 

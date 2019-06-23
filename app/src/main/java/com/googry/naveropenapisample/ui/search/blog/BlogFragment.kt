@@ -1,4 +1,4 @@
-package com.googry.naveropenapisample.ui.blog
+package com.googry.naveropenapisample.ui.search.blog
 
 import android.os.Bundle
 import android.view.View
@@ -9,16 +9,16 @@ import com.googry.naveropenapisample.R
 import com.googry.naveropenapisample.databinding.BlogFragmentBinding
 import com.googry.naveropenapisample.databinding.BlogItemBinding
 import com.googry.naveropenapisample.model.NaverSearchBlogModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 
-class BlogFragment : BaseFragment<BlogFragmentBinding>(R.layout.blog_fragment) {
+class BlogFragment :
+    BaseFragment<BlogFragmentBinding, BlogViewModel>(R.layout.blog_fragment) {
 
-    private val blogViewModel by viewModel<BlogViewModel>()
+    override val viewModel = getViewModel<BlogViewModel>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding {
-            vm = blogViewModel
             rvContent.adapter =
                 object : SimpleRecyclerView.Adapter<NaverSearchBlogModel, BlogItemBinding>(
                     layoutRes = R.layout.blog_item,
