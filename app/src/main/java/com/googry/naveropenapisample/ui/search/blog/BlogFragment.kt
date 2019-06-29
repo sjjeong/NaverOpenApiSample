@@ -9,12 +9,12 @@ import com.googry.naveropenapisample.R
 import com.googry.naveropenapisample.databinding.BlogFragmentBinding
 import com.googry.naveropenapisample.databinding.BlogItemBinding
 import com.googry.naveropenapisample.model.NaverSearchBlogModel
-import org.koin.androidx.viewmodel.ext.android.getViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class BlogFragment :
     BaseFragment<BlogFragmentBinding, BlogViewModel>(R.layout.blog_fragment) {
 
-    override val viewModel = getViewModel<BlogViewModel>()
+    override val viewModel = viewModel<BlogViewModel>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
